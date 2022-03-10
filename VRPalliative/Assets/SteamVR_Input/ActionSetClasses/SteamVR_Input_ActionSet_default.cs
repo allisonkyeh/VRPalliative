@@ -105,6 +105,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean Butterfly
+        {
+            get
+            {
+                return SteamVR_Actions.default_Butterfly;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
