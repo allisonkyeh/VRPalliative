@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/scn_ButterflyGarden.unity
+    guid: a9394d3f1d3d83946bfa624f17eadd12
   m_configObjects: {}
