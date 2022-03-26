@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Bottle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	// [SerializeField] GameObject brokenMesh;
+    // public GameObject shards;
+    // private transform bottleTransform;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	// void Break() {
+
+	// 	// swap bottle mesh for shards prefab instance?
+
+    //     bottleTransform = this.transform;
+    //     Destroy(this);
+
+    //     Instantiate(brokenMesh, bottleTransform.position, bottleTransform.rotation);
+	// 	   Scripting API: PrefabUtility.UnpackPrefabInstance
+    //     PrefabUtility.UnpackPrefabInstance(shards, OutermostRoot, AutomatedAction);
+	// }
+
+
 }
