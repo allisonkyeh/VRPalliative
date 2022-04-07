@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Bottle : MonoBehaviour
 {
-	// [SerializeField] GameObject brokenMesh;
-    // public GameObject shards;
-    // private transform bottleTransform;
+    // attach broken prefab here; maybe can randomize pf +  mat later on
+	[SerializeField]
+    private GameObject  brokenMesh;
+    private Transform   bottleTransform;
 
-	// void Break() {
+	void Break() {
 
-	// 	// swap bottle mesh for shards prefab instance?
+        // stores bottle transform
+        bottleTransform = this.transform;
 
-    //     bottleTransform = this.transform;
-    //     Destroy(this);
+        // maybe play some particles here for the break like sparks or w/e
 
-    //     Instantiate(brokenMesh, bottleTransform.position, bottleTransform.rotation);
-	// 	   Scripting API: PrefabUtility.UnpackPrefabInstance
-    //     PrefabUtility.UnpackPrefabInstance(shards, OutermostRoot, AutomatedAction);
-	// }
+        // instantiate copy of broken bottle at stored transformed
+        Instantiate(brokenMesh, bottleTransform.position, bottleTransform.rotation);
+        // gets rid of whole bottle
+        Destroy(gameObject);
+
+	}
 
 
 }

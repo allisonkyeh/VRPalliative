@@ -4,28 +4,37 @@ using UnityEngine;
 
 public class Worktable : MonoBehaviour
 {
-    List<GameObject> piecesList;
-	// ????bool??? button
+    Collider[] shardsList = null;
+    private int maskLayer => LayerMask.NameToLayer("Default");
 
-    void OnTriggerEnter () {
-        // add to shardsList
-        // need some way to only add bottle pieces? or should whole bottles also be allowed
-        // then need to remove bottle if it’s broken, and add pieces when it breaks
+    // reference point for parenting shards
+    [SerializeField] Transform center;
+    // prefab for suncatchers
+    [SerializeField] GameObject suncatcher;
 
+    void Button() {
+        // input action function to activate assemble
     }
 
     void Assemble() {
-        // Scripting API: Transform.SetParent
-        // child.transform.SetParent(newParent);
 
         // piece prefabs should be split before reaching this function
 
-        GameObject suncatcher;
+        // detect what colliders are in box at the time of this function
+        Collider[] shardsList = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, maskLayer);
 
-        foreach (GameObject piece in piecesList)
+        GameObject child;
+        GameObject parent;
+        parent = Instantiate(suncatcher, center.position, Quaternion.identity);
+        // parent.AddComponent<>(); // TODO: add interactable component here
+
+        foreach (Collider shard in shardsList)
         {
-            // piece.transform.SetParent(suncatcher);
-            // add interactable component to suncatcher
+            child = shard.gameObject;
+            child.transform.SetParent(parent.transform);
         }
+
+        // PrefabUtility.UnpackPrefabInstance(shards, OutermostRoot, AutomatedAction);
+
     }
 }
