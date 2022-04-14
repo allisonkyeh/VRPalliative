@@ -10,11 +10,7 @@ public class Bottle : MonoBehaviour
     private GameObject  brokenMesh;
     private Transform   bottleTransform;
 
-    void Button () {
-        // input action function to activate break, or just combine into it
-    }
-
-	void Break() {
+	public void Break() {
 
         // stores bottle transform
         bottleTransform = this.transform;
@@ -23,7 +19,7 @@ public class Bottle : MonoBehaviour
 
         // instantiate copy of broken bottle at stored transformed
         GameObject b = Instantiate(brokenMesh, bottleTransform.position, bottleTransform.rotation);
-        // unpacks shrads prefab
+        // unpacks shards prefab
         PrefabUtility.UnpackPrefabInstance(b, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
 
         // gets rid of whole bottle
