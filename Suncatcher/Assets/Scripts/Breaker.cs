@@ -15,10 +15,13 @@ public class Breaker : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Hitting something: " + other.gameObject.name);
+        // Debug.Log("Hitting something on this layer: " + other.gameObject.layer);
+        
         if (other.gameObject.layer == breakLayer){
             other.transform.root.gameObject.GetComponent<Bottle>().Break();
-        } else if (other.gameObject.layer == handsLayer){
+        }
+        
+        if (other.gameObject.layer == handsLayer){
             table.GetComponent<Worktable>().Assemble();
         }
     }
