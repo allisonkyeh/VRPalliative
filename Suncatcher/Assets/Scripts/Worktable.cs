@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Worktable : MonoBehaviour
 {
-    Collider[]      shardsList = null;
     private int     pieceLayer => LayerMask.NameToLayer("Piece");
 
     [SerializeField] Transform  center;      // reference point for parenting shards
@@ -24,7 +23,11 @@ public class Worktable : MonoBehaviour
             foreach (Collider shard in shardsList)
             {
                 child = shard.gameObject;
-                if (child.layer == pieceLayer) child.transform.SetParent(parent.transform);
+                if (child.layer == pieceLayer) {
+                    Debug.Log("PARENT: " + parent.name);
+                    Debug.Log("shard: " + child.name);
+                    child.transform.SetParent(parent.transform);
+                }
             }
         }
     }
