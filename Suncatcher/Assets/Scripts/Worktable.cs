@@ -4,32 +4,34 @@ using UnityEngine;
 
 public class Worktable : MonoBehaviour
 {
-    Collider[] shardsList = null;
-    private int maskLayer => LayerMask.NameToLayer("Default");
+    Collider[]      shardsList = null;
+    private int     pieceLayer => LayerMask.NameToLayer("Piece");
 
-    // reference point for parenting shards
-    [SerializeField] Transform center;
-    // prefab for suncatchers
-    [SerializeField] GameObject suncatcher;
+    [SerializeField] Transform  center;      // reference point for parenting shards
+    [SerializeField] GameObject suncatcher; // prefab for suncatchers
 
-    void Button() {
-        // input action function to activate assemble
-    }
-
-    void Assemble() {
+    public void Assemble() {
 
         // detect what colliders are in box at the time of this function
-        Collider[] shardsList = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, maskLayer);
+        Collider[] shardsList = Physics.OverlapBox(gameObject.transform.position, transform.localScale, Quaternion.identity, pieceLayer);
 
-        GameObject child;
-        GameObject parent;
-        parent = Instantiate(suncatcher, center.position, Quaternion.identity);
+        if (shardsList != null) {
+            GameObject child;
+            GameObject parent;
+            parent = Instantiate(suncatcher, center.position, Quaternion.identity);
 
-        // goes through detected shards and puts them under the new suncatcher parent
-        foreach (Collider shard in shardsList)
-        {
-            child = shard.gameObject;
-            child.transform.SetParent(parent.transform);
+            // goes through detected shards and puts them under the new suncatcher parent
+            foreach (Collider shard in shardsList)
+            {
+                child = shard.gameObject;
+                if (child.layer == pieceLayer) child.transform.SetParent(parent.transform);
+            }
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireCube(transform.position, transform.localScale);
     }
 }

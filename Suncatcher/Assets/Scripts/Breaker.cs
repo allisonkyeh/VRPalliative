@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Breaker : MonoBehaviour
 {
-    private int bottleLayer => LayerMask.NameToLayer("Bottle");
+    private int breakLayer => LayerMask.NameToLayer("Breakable");
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.layer == bottleLayer){
-            other.gameObject.GetComponent<Bottle>().Break();
+        if (other.gameObject.layer == breakLayer){
+            other.transform.root.gameObject.GetComponent<Bottle>().Break();
         }
     }
 }
