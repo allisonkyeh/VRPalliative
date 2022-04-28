@@ -33,8 +33,8 @@ public class Worktable : MonoBehaviour
                     child.transform.SetParent(parent.transform);
                 }
             }
-            parent.AddComponent<BoxCollider>();
-            parent.GetComponent<BoxCollider>().size = new Vector3(0.5f, 0.2f, 0.5f);
+            // parent.AddComponent<BoxCollider>();
+            // parent.GetComponent<BoxCollider>().size = new Vector3(0.5f, 0.2f, 0.5f);
 
         }
     }
