@@ -19,10 +19,13 @@ public class Bottle : MonoBehaviour
 
         // instantiate copy of broken bottle at stored transformed
         GameObject b = Instantiate(brokenMesh, bottleTransform.position, bottleTransform.rotation);
+        
         // unpacks shards prefab
-        PrefabUtility.UnpackPrefabInstance(b, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+        // PrefabUtility.UnpackPrefabInstance(b, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+        // oh ig you don't actually need this for instances
 
         // gets rid of whole bottle
+        // Debug.Log("Destroying: " + gameObject.name);
         Destroy(gameObject);
 
 	}

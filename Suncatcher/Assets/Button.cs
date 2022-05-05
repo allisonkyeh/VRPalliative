@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public Worktable table;
-    private int handLayer => LayerMask.NameToLayer("Hands");
+    // public Worktable table;
+    // private int handLayer => LayerMask.NameToLayer("Hands");
 
+    // void Awake()
+    // {
+    //     table = FindObjectOfType<Worktable>();
+    // }
 
-    void Awake()
-    {
-        table = FindObjectOfType<Worktable>();
-    }
-
-    private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.layer == handLayer) {
-            table.GetComponent<Worktable>().Assemble();
-        }
-    }
+    // private void OnCollisionEnter(Collision other) {
+    //     Debug.Log("triggering!!!!");
+    //     if (other.gameObject.layer == handLayer) {
+    //         table.GetComponent<Worktable>().Assemble();
+    //     }
+    // }
 }
