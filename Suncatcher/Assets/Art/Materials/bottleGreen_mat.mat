@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: transparent_mat
+  m_Name: bottleGreen_mat
   m_Shader: {fileID: -6465566751694194690, guid: 8d2e29f33763ccd4285dbf564de25fbb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,14 +33,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_140B7CD0: 12.62
-    - Vector1_7C0811FC: 0.02
-    - Vector1_C71DCA8D: 2
+    - Vector1_140B7CD0: 4.1
+    - Vector1_7C0811FC: 0.5
+    - Vector1_C71DCA8D: 4.26
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - Color_6D8282FF: {r: 0.82452834, g: 0.97125036, b: 1, a: 0}
-    - Color_D7DD1F28: {r: 0, g: 0.017813144, b: 0.7169812, a: 0}
+    - Color_6D8282FF: {r: 0.2980392, g: 1, b: 0.5071538, a: 0}
+    - Color_D7DD1F28: {r: 0, g: 0.8207547, b: 0.47211343, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3242741290148843680
 MonoBehaviour:
