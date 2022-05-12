@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 0
-    path: Assets/Scenes/scn_SunStudio.unity
+    path: Assets/Scenes/scn_SunLayout.unity
     guid: 77cfdb1b0864d9b4da048ee0d4b323b7
   - enabled: 1
     path: Assets/Scenes/scn_SunInteraction.unity
