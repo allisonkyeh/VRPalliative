@@ -9,6 +9,11 @@ public class Bottle : MonoBehaviour
 	[SerializeField]
     private GameObject  brokenMesh;
     private Transform   bottleTransform;
+    private Material    bottleMat;
+
+    private void Start() {
+        gameObject.GetComponent<Renderer>().material = bottleMat;
+    }
 
 	public void Break() {
 

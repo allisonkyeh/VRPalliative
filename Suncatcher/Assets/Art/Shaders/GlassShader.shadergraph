@@ -17,9 +17,6 @@
         },
         {
             "m_Id": "6ac78bc55558ee81b706ec07e970e770"
-        },
-        {
-            "m_Id": "4b29af0c5eff480a863f2f34465d0857"
         }
     ],
     "m_Keywords": [],
@@ -293,9 +290,6 @@
         },
         {
             "m_Id": "6ac78bc55558ee81b706ec07e970e770"
-        },
-        {
-            "m_Id": "4b29af0c5eff480a863f2f34465d0857"
         }
     ]
 }
@@ -761,33 +755,6 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "VertexDescription.Tangent"
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "4b29af0c5eff480a863f2f34465d0857",
-    "m_Guid": {
-        "m_GuidSerialized": "2093c07f-55f8-4c0f-b913-6ad073232be6"
-    },
-    "m_Name": "NoiseScale",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "NoiseScale",
-    "m_DefaultReferenceName": "_NoiseScale",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 500.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
-    }
 }
 
 {

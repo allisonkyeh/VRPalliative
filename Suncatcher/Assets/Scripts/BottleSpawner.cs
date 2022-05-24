@@ -5,7 +5,7 @@ using UnityEngine;
 public class BottleSpawner : MonoBehaviour
 {
     [SerializeField]
-    private List<Material> bottleModels;
+    private List<GameObject> bottleModels;
     private int modelCount => bottleModels.Count;
     private int randModelNum;
 
@@ -13,6 +13,9 @@ public class BottleSpawner : MonoBehaviour
     private List<Material> bottleMats;
     private int matCount => bottleMats.Count;
     private int randMatNum;
+
+    // make sure same order as bottleMats
+    private List<Material> shardMats;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +28,10 @@ public class BottleSpawner : MonoBehaviour
         randModelNum = Random.Range(1, modelCount);
         randMatNum = Random.Range(1, matCount);
 
-        // Instantiate(suncatcher, center.position, Quaternion.identity);
+        // TODO: position, and push to beach
+        GameObject parent;
+        // parent = Instantiate(bottleModels[randModelNum], center.position, Random.rotation);
+        // parent.transform.GetChild(0).GetComponent<Renderer>().material = bottleMats[randMatNum];
 
     }
     // Range int is: minInclusive, maxExclusive

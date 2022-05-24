@@ -5,7 +5,7 @@ using UnityEngine;
 public class Breaker : MonoBehaviour
 {
     private int breakLayer => LayerMask.NameToLayer("Breakable");
-    private int handsLayer => LayerMask.NameToLayer("Hands");
+    private int buttonLayer => LayerMask.NameToLayer("Button");
     public Worktable table;
     public ParticleSystem hitParticles;
 
@@ -23,7 +23,7 @@ public class Breaker : MonoBehaviour
             other.transform.root.gameObject.GetComponent<Bottle>().Break();
         }
         
-        if (other.gameObject.layer == handsLayer){
+        if (other.gameObject.layer == buttonLayer){
             table.GetComponent<Worktable>().Assemble();
         }
     }
