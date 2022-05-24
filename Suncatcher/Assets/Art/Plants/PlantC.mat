@@ -88,7 +88,7 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
-    - _ColorRange: 0.721
+    - _ColorRange: 0.691
     - _Cull: 2
     - _Cutoff: 0.5
     - _DstBlend: 0
@@ -96,6 +96,8 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _HDR_Blend_Strength: 3.4
+    - _HDR_Range: 0.652
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueControl: 0
