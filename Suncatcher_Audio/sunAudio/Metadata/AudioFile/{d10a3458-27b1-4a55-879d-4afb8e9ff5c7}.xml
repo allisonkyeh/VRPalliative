@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d10a3458-27b1-4a55-879d-4afb8e9ff5c7}">
+		<property name="assetPath">
+			<value>sfx/sfx_glassClink1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.68024943310657593</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b10a1ea4-482b-4fac-bd8a-cfffbdccb1b4}</destination>
+		</relationship>
+	</object>
+</objects>

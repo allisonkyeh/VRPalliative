@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{36e7920a-b6d8-4cac-96a9-06739a70acd8}">
+		<property name="assetPath">
+			<value>amb/amb_oceanWaves.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>70.884716553287987</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b10a1ea4-482b-4fac-bd8a-cfffbdccb1b4}</destination>
+		</relationship>
+	</object>
+</objects>
