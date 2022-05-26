@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6e4ed3ca-8ee4-407b-8c90-53f3c8e9a122}">
+		<property name="assetPath">
+			<value>sfx/sfx_hammerDrop.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3001360544217686</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b10a1ea4-482b-4fac-bd8a-cfffbdccb1b4}</destination>
+		</relationship>
+	</object>
+</objects>

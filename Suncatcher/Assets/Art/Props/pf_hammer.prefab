@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4247991492919267795}
   - component: {fileID: 8869426838600617842}
   - component: {fileID: 511834195440902491}
+  - component: {fileID: 1362098351}
   m_Layer: 0
   m_Name: pf_hammer
   m_TagString: Untagged
@@ -50,6 +51,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table: {fileID: 0}
   hitParticles: {fileID: 2477022593887912133}
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1362098351}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2477022593887912133}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &8869426838600617842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61,7 +89,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -178,9 +206,39 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ThrowVelocityScale: 0.5
   m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
+  m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &1362098351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318389992225210314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1267592597
+      Data2: 1302602992
+      Data3: -1375928443
+      Data4: -1062045635
+    Path: event:/sfx/hammerHit
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &771998047895451098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,15 +256,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2942705220277515549, guid: 212f69370c9914b438b940c58b540abc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14994377
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942705220277515549, guid: 212f69370c9914b438b940c58b540abc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.076745905
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942705220277515549, guid: 212f69370c9914b438b940c58b540abc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.09733275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942705220277515549, guid: 212f69370c9914b438b940c58b540abc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -337,7 +395,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.015
+  m_Radius: 0.018
   m_Height: 0.275
   m_Direction: 2
   m_Center: {x: 0, y: -0.0000000023283064, z: 0}
@@ -346,6 +404,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 434906572300392444, guid: b65d3a9eb9ceb4da2af61bcafca29a3c, type: 3}
   m_PrefabInstance: {fileID: 2369796833894467828}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2027540960613270582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804102727902338824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0.00000023841858}
 --- !u!136 &4626681074113460522
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -356,8 +427,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.055
-  m_Height: 0.175
+  m_Radius: 0.06
+  m_Height: 0.19
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2839955896499269407 stripped
