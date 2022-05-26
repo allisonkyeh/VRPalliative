@@ -566,10 +566,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7406110103180093386}
   - component: {fileID: 7406110103180093383}
-  - component: {fileID: 7406110103180093380}
   - component: {fileID: 7406110103180093381}
   - component: {fileID: 7406110103180093382}
   - component: {fileID: -7775315711204192043}
+  - component: {fileID: 1498105926}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -635,14 +635,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7406110103180093380
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7406110103180093387}
-  m_Enabled: 1
 --- !u!114 &7406110103180093381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,6 +771,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
   ListenerNumber: -1
+--- !u!114 &1498105926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406110103180093387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &7406110103598690516
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +836,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 7406110103598690516}
   m_CameraFloorOffsetObject: {fileID: 7406110102588417695}
   m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 4
+  m_CameraYOffset: 0
 --- !u!114 &7406110103598690512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 0}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 1.5
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 0
@@ -884,11 +890,11 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0.7
+  m_Radius: 0.1
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7406110104017415881

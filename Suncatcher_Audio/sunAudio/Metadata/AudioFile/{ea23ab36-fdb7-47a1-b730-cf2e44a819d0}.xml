@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ea23ab36-fdb7-47a1-b730-cf2e44a819d0}">
+		<property name="assetPath">
+			<value>amb/musc_ACNH_7AM.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>166.10400000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b10a1ea4-482b-4fac-bd8a-cfffbdccb1b4}</destination>
+		</relationship>
+	</object>
+</objects>

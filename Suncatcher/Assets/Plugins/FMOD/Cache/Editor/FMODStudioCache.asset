@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../Suncatcher_Audio/sunAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637891305570560536
+  lastModified: 637891382450754936
   FileSizes:
   - Name: Desktop
     Value: 1028
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../Suncatcher_Audio/sunAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637891305570540587
+  lastModified: 637891382450739872
   FileSizes:
   - Name: Desktop
-    Value: 1877824
+    Value: 3987104
   Exists: 1
 --- !u!114 &-3416742974830943154
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   - {fileID: -5233784560064855348}
   StringsBanks:
   - {fileID: -6807845381627689934}
-  cacheTime: 637891305570560536
+  cacheTime: 637891382450754936
   cacheVersion: 10
 --- !u!114 &1182801390970877082
 MonoBehaviour:
@@ -175,7 +175,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 67088
+  Length: 166104
 --- !u!114 &7390938258324852129
 MonoBehaviour:
   m_ObjectHideFlags: 0
