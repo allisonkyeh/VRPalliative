@@ -20,7 +20,7 @@ public class Breaker : MonoBehaviour
         hitParticles.Emit(20);
 
         if (other.gameObject.layer == breakLayer){
-            other.transform.root.gameObject.GetComponent<Bottle>().Break();
+            other.transform.parent.gameObject.GetComponent<Bottle>().Break();
         }
         
         if (other.gameObject.layer == buttonLayer){
