@@ -53,13 +53,15 @@ Material:
     m_Floats:
     - Vector1_3809765A: 0
     - Vector1_6C1233FD: 0.4
-    - Vector1_854D61AC: 23.7
+    - Vector1_854D61AC: 83.3
     - Vector1_89EB340: 0.5
     - Vector1_E7B459BE: 0.3
-    - _ColorRange: 0.782
+    - _ColorRange: 0.492
+    - _HDR_Blend_Strength: 3.6
+    - _HDR_Range: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - Color_B6E66D72: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_BB195B3F: {r: 2, g: 0, b: 0, a: 0}
+    - Vector2_BB195B3F: {r: 1.6, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

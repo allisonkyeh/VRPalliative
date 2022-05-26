@@ -36,10 +36,11 @@ Material:
     m_Floats:
     - Vector1_140B7CD0: 4.1
     - Vector1_7C0811FC: 0.58
-    - Vector1_C71DCA8D: 4.89
+    - Vector1_C71DCA8D: 4.17
     - _NoiseScale: 1000
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Smoothness: 1.17
     m_Colors:
     - Color_6D8282FF: {r: 0.30588233, g: 1, b: 0.9246914, a: 0}
     - Color_D7DD1F28: {r: 0, g: 0.08392, b: 1, a: 0}
