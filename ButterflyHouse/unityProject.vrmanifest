@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.butterfly.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\RISD-ISB-VR2\\Documents\\AllisonYeh\\VRPalliative\\VRPalliative\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\RISD-ISB-VR2\\Documents\\AllisonYeh\\VRPalliative\\ButterflyHouse\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Butterfly [Testing]"
