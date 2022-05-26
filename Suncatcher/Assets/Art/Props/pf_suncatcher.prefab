@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3657253686276839003}
   - component: {fileID: 3657253686276839002}
   - component: {fileID: 3657253686276839001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pf_suncatcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1172935930531263290}
   - component: {fileID: 6996797196374238591}
   - component: {fileID: 1685030798448004384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

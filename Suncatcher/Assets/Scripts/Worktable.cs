@@ -6,6 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Worktable : MonoBehaviour
 {
     private int     pieceLayer => LayerMask.NameToLayer("Piece");
+    private int     sunLayer => LayerMask.NameToLayer("Suncatcher");
+
     
     [SerializeField] Transform  center;      // reference point for parenting shards
     [SerializeField] GameObject suncatcher; // prefab for suncatchers
@@ -14,6 +16,12 @@ public class Worktable : MonoBehaviour
 
         // detect what colliders are in box at the time of this function
         Collider[] shardsList = Physics.OverlapBox(gameObject.transform.position, transform.localScale, Quaternion.identity);
+        
+        // won't do anything if a suncatcher is within work area
+        foreach (Collider col in shardsList)
+        {
+            if (col.gameObject.layer == sunLayer) return;
+        }
 
         if (shardsList != null) {
             GameObject child;
@@ -23,8 +31,7 @@ public class Worktable : MonoBehaviour
             // goes through detected shards and puts them under the new suncatcher parent
             foreach (Collider shard in shardsList)
             {
-                Debug.Log("shard layer: " + shard.gameObject.layer);
-
+                // Debug.Log("shard layer: " + shard.gameObject.layer);
                 child = shard.gameObject;
                 if (child.layer == pieceLayer) {
                     Destroy(child.GetComponent<XRGrabInteractable>());
@@ -33,9 +40,6 @@ public class Worktable : MonoBehaviour
                     child.transform.SetParent(parent.transform);
                 }
             }
-            // parent.AddComponent<BoxCollider>();
-            // parent.GetComponent<BoxCollider>().size = new Vector3(0.5f, 0.2f, 0.5f);
-
         }
     }
 

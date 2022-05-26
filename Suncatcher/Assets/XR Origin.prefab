@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406110102455629497}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 7406110102596259563}
   - component: {fileID: 7406110102596259557}
   - component: {fileID: 7406110102596259562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 7406110102873520776}
   - component: {fileID: 7406110102873520778}
   - component: {fileID: 7406110102873520779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 7406110103101783424}
   - component: {fileID: 7406110103101783425}
   - component: {fileID: 7406110103101783430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftBaseController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406110103150833456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 7406110103180093380}
   - component: {fileID: 7406110103180093381}
   - component: {fileID: 7406110103180093382}
+  - component: {fileID: -7775315711204192043}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -764,6 +765,20 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &-7775315711204192043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406110103180093387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &7406110103598690516
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +903,7 @@ GameObject:
   - component: {fileID: 7406110104017415877}
   - component: {fileID: 7406110104017415882}
   - component: {fileID: 7406110104017415883}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightBaseController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
